@@ -5,7 +5,7 @@ namespace Math;
 /**
  * Class Calculator.
  */
-class Calculator implements \Math\CalculatorInterface {
+class Calculator implements CalculatorInterface {
 
   /**
    * Where we are storing the total number calculated.
