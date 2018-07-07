@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors',1);error_reporting(E_ALL);
+
 // No longer need this. We are autoloading.
 //require_once __DIR__ . "/includes/CalculatorInterface.php";
 //require_once __DIR__ . "/includes/Calculator.php";
@@ -18,8 +18,8 @@ spl_autoload_register("my_custom_autoloader");
  */
 function my_custom_autoloader($class_name) {
   $file = __DIR__ . "/includes/" . $class_name . ".php";
+
   if (file_exists($file)) {
-    print "found - ". $class_name . " - " . $file . '<br>';
     require_once $file;
   }
 }

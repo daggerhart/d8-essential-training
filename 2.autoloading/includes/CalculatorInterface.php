@@ -1,7 +1,5 @@
 <?php
 
-namespace Math;
-
 /**
  * Interface CalculatorInterface.
  *

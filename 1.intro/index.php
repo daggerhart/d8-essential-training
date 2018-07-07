@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors',1);error_reporting(E_ALL);
+
 require_once __DIR__ . "/includes/CalculatorInterface.php";
 require_once __DIR__ . "/includes/Calculator.php";
 require_once __DIR__ . "/includes/WholeNumberCalculator.php";
