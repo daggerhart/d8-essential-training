@@ -1,0 +1,15 @@
+{
+  "name": "jonathan/5.psr4-composer",
+  "description": "Example of using composer to autoload with PSR4 strategy",
+  "authors": [
+    {
+      "name": "Jonathan Daggerhart",
+      "email": "jonathan@daggerhart.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jonathan\\": "src/"
+    }
+  }
+}
