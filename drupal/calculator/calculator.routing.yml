@@ -1,0 +1,7 @@
+calculator.page:
+  path: 'calculator'
+  defaults:
+    _form: '\Drupal\calculator\Form\CalculatorForm'
+    _title: 'Calculator'
+  requirements:
+    _permission: 'access content'

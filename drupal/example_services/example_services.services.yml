@@ -1,0 +1,8 @@
+# Top level starts with "services:"
+services:
+  # Services are keyed by name that is used
+  # to retrieve it.
+  my.custom.service:
+    # "class" property defines the class that
+    # will be instantiated and returned.
+    class: \Drupal\example_services\MyService

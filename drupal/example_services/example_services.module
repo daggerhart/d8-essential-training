@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_help()
+ */
+function example_services_help() {
+
+  $myService = \Drupal::service('my.custom.service');
+  $myService->doSomethingRad();
+
+}

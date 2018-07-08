@@ -1,0 +1,5 @@
+name: Calculator
+description: Provides a simple calculator as a page and a block.
+type: module
+core: 8.x
+version: 0.1
