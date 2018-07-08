@@ -30,6 +30,6 @@ $service_locator->register('date.formatter', new DateFormatterService());
 
 // Later in our application, we can request the service by name.
 $date_formatter_service = $service_locator->get('date.formatter');
-print $date_formatter_singleton->format(1111111111) . '<hr>';
-print $date_formatter_singleton->format(1111111111, 'medium') . '<hr>';
-print $date_formatter_singleton->format(1111111111, 'long') . '<hr>';
+print $date_formatter_service->format(1111111111) . '<hr>';
+print $date_formatter_service->format(1111111111, 'medium') . '<hr>';
+print $date_formatter_service->format(1111111111, 'long') . '<hr>';
