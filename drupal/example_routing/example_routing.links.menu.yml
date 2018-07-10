@@ -1,0 +1,8 @@
+# Top level is the link's name
+my.menu-link:
+  title: 'A link to one of my pages'
+  menu_name: main
+  route_name: my.module.some.route.name.to.page
+
+
+

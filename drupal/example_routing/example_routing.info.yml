@@ -1,0 +1,4 @@
+name: Example Routing
+description: Some simple examples for providing a new routes in Drupal to pages and forms.
+type: module
+core: 8.x

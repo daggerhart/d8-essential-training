@@ -1,0 +1,37 @@
+# Route name can be anything reasonable.
+my.module.some.route.name.to.page:
+  # URI where this route will respond
+  path: 'my-page'
+  defaults:
+    _controller: '\Drupal\example_routing\Controller\SomePage::myMethod'
+    _title: 'My Page'
+  requirements:
+    _permission: 'access content'
+
+# You can point multiple routes to the same controller.
+another.route.this.one.with.parameters:
+  path: 'my-parameters/{some_name}/{some_title}'
+  defaults:
+    _controller: '\Drupal\example_routing\Controller\SomePage::withParameters'
+  requirements:
+    _permission: 'access content'
+
+# Routes can return multiple types of responses. A common one is JSON.
+some.other.route.with.json.output:
+  path: 'my-json'
+  defaults:
+    _controller: '\Drupal\example_routing\Controller\SomePage::aMethodThatReturnsJson'
+  requirements:
+    _permission: 'access content'
+
+# Routing to a form is slightly different.
+# Instead of _controller, use _form, and target
+# the class instead of a method.
+my.route.to.a.form:
+  path: 'my-form'
+  defaults:
+    _form: '\Drupal\example_routing\Form\SomeForm'
+    _title: 'This is my form'
+  requirements:
+    _permission: 'access content'
+
