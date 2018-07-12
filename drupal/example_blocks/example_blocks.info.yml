@@ -1,0 +1,4 @@
+name: Example Blocks
+description: Examples for creating custom block types
+type: module
+core: 8.x
