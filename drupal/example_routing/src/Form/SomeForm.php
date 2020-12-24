@@ -57,6 +57,6 @@ class SomeForm extends FormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $messenger = \Drupal::messenger();
 
-    $messenger->s  ($form_state->getValue('some_text'));
+    $messenger->addStatus($form_state->getValue('some_text'));
   }
 }
